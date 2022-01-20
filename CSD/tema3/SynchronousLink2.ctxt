@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=SynchronousLink2
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ SynchronousLink2\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=SynchronousLink2()
+comment2.params=m
+comment2.target=void\ send(java.lang.Object)
+comment3.params=
+comment3.target=java.lang.Object\ receive()
+numComments=4
