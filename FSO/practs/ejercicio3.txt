@@ -1,0 +1,12 @@
+Inspeccion: Valor actual de V = -14998780
+Inspeccion: Valor actual de V = -13607991
+Inspeccion: Valor actual de V = -10939027
+Inspeccion: Valor actual de V = -13585155
+-------> Fin AGREGA (V = -14864754)
+-------> Fin RESTA  (V = -25081061)
+-------> VALOR FINAL: V = -25081061
+
+
+real    0m0,886s
+user    0m1,729s
+sys     0m0,000s

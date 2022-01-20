@@ -1,0 +1,28 @@
+Inspeccion: Valor actual de V = 14699
+Inspeccion: Valor actual de V = -205152
+Inspeccion: Valor actual de V = -681271
+Inspeccion: Valor actual de V = -1031052
+Inspeccion: Valor actual de V = -1349468
+Inspeccion: Valor actual de V = -1655206
+Inspeccion: Valor actual de V = -1966480
+Inspeccion: Valor actual de V = -2355020
+Inspeccion: Valor actual de V = -2733450
+Inspeccion: Valor actual de V = -3000121
+Inspeccion: Valor actual de V = -3119242
+Inspeccion: Valor actual de V = -3422006
+Inspeccion: Valor actual de V = -3787858
+Inspeccion: Valor actual de V = -3788047
+Inspeccion: Valor actual de V = -3585135
+Inspeccion: Valor actual de V = -3378113
+Inspeccion: Valor actual de V = -3478396
+Inspeccion: Valor actual de V = -3976427
+Inspeccion: Valor actual de V = -3938885
+Inspeccion: Valor actual de V = -4268562
+-------> Fin RESTA  (V = -4324937)
+-------> Fin AGREGA (V = 100)
+-------> VALOR FINAL: V = 100
+
+
+real    0m4,193s
+user    0m6,066s
+sys     0m2,116s

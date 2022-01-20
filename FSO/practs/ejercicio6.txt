@@ -1,0 +1,21 @@
+ Inspeccion: Valor actual de V = 199499
+Inspeccion: Valor actual de V = 120557
+Inspeccion: Valor actual de V = 65689
+Inspeccion: Valor actual de V = 118848
+Inspeccion: Valor actual de V = 328331
+Inspeccion: Valor actual de V = 450839
+Inspeccion: Valor actual de V = 610542
+Inspeccion: Valor actual de V = 782338
+Inspeccion: Valor actual de V = 856004
+Inspeccion: Valor actual de V = 1005726
+Inspeccion: Valor actual de V = 999246
+Inspeccion: Valor actual de V = 1268206
+-------> Fin AGREGA (V = 1319245)
+-------> Fin RESTA  (V = 100)
+-------> VALOR FINAL: V = 100
+
+
+real    0m2,531s
+user    0m3,813s
+sys     0m1,171s
+
