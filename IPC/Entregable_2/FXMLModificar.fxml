@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxconnect4.FXMLModificarController">
+   <center>
+      <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="nuevo_correo" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="nueva_contraseña" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <TextField fx:id="año" prefHeight="25.0" prefWidth="67.0" />
+                  <TextField fx:id="día" prefHeight="25.0" prefWidth="67.0" />
+                  <MenuButton mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="Mes">
+                     <items>
+                        <RadioMenuItem fx:id="enero" mnemonicParsing="false" text="Enero" />
+                        <RadioMenuItem fx:id="febrero" mnemonicParsing="false" text="Febrero" />
+                        <RadioMenuItem fx:id="marzo" mnemonicParsing="false" text="Marzo" />
+                        <RadioMenuItem fx:id="abril" mnemonicParsing="false" text="Abril" />
+                        <RadioMenuItem fx:id="mayo" mnemonicParsing="false" text="Mayo" />
+                        <RadioMenuItem fx:id="junio" mnemonicParsing="false" text="Junio" />
+                        <RadioMenuItem fx:id="julio" mnemonicParsing="false" text="Julio" />
+                        <RadioMenuItem fx:id="agosto" mnemonicParsing="false" text="Agosto" />
+                        <RadioMenuItem fx:id="septiembre" mnemonicParsing="false" text="Septiembre" />
+                        <RadioMenuItem fx:id="octubre" mnemonicParsing="false" text="Octubre" />
+                        <RadioMenuItem fx:id="noviembre" mnemonicParsing="false" text="Noviembre" />
+                        <RadioMenuItem fx:id="diciembre" mnemonicParsing="false" text="Diciembre" />
+                     </items>
+                  </MenuButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <children>
+                  <Label text="Año">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Día">
+                     <HBox.margin>
+                        <Insets left="48.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="error" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Button fx:id="fin" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#finalizar" prefHeight="32.0" prefWidth="65.0" text="Finalizar" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="10.0" />
+               </GridPane.margin></Button>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+               <children>
+                  <Label text="Usuario">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+               <children>
+                  <Label text="Cuenta de correo">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="3">
+               <children>
+                  <Label text="Contraseña">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="4">
+               <children>
+                  <Label text="Fecha de nacimiento">
+                     <VBox.margin>
+                        <Insets left="80.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label fx:id="nuevo_usuario" />
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </center>
+   <right>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="34.0" />
+            <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="166.0">
+               <children>
+                  <Label text="Avatar">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ImageView fx:id="nuevo_avatar" fitHeight="137.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../avatars/default.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#change_avatar" prefHeight="30.0" prefWidth="100.0" text="Change avatar">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#volver" prefHeight="31.0" prefWidth="57.0" text="Volver">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="80.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </right>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Pantalla">
+               <items>
+                  <RadioMenuItem fx:id="modo_noche" mnemonicParsing="false" onAction="#Modo_CSS" text="Modo noche">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="css" />
+                     </toggleGroup>
+                  </RadioMenuItem>
+                  <RadioMenuItem fx:id="modo_dia" mnemonicParsing="false" onAction="#Modo_CSS" text="Modo día" toggleGroup="$css" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

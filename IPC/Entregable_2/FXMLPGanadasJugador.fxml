@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxconnect4.FXMLPGanadasJugadorController">
+   <center>
+      <TableView fx:id="tabla_tree" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="fecha_display" prefWidth="318.0" text="Fecha" />
+            <TableColumn fx:id="perdedor_display" minWidth="0.0" prefWidth="281.0" text="Perdedor" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <VBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Volver" prefHeight="32.0" prefWidth="59.0" text="Volver">
+               <VBox.margin>
+                  <Insets bottom="22.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <VBox prefHeight="82.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Pantalla">
+                     <items>
+                        <RadioMenuItem fx:id="modo_noche" mnemonicParsing="false" onAction="#Modo_CSS" text="Modo noche">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="css" />
+                           </toggleGroup>
+                        </RadioMenuItem>
+                        <RadioMenuItem fx:id="modo_dia" mnemonicParsing="false" onAction="#Modo_CSS" text="Modo día" toggleGroup="$css" />
+                     </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="600.0">
+               <children>
+                  <Label text="Partidas ganadas por:">
+                     <HBox.margin>
+                        <Insets right="22.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="usuario_ver" textFill="#4e12d9">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

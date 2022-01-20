@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxconnect4.FXMLElegirUsu_y_FechaController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Introduzca el nickname a buscar:">
+                     <HBox.margin>
+                        <Insets right="22.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usuario_nick" prefHeight="25.0" prefWidth="182.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="223.0" prefWidth="600.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="223.0" prefWidth="299.0">
+                     <children>
+                        <Label text="Fecha inicio">
+                           <VBox.margin>
+                              <Insets bottom="22.0" />
+                           </VBox.margin>
+                        </Label>
+                        <DatePicker fx:id="fecha_ini" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="223.0" prefWidth="310.0">
+                     <children>
+                        <Label text="Fecha final">
+                           <VBox.margin>
+                              <Insets bottom="22.0" />
+                           </VBox.margin>
+                        </Label>
+                        <DatePicker fx:id="fecha_fin" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <VBox alignment="TOP_RIGHT" prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buscar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Buscar" prefHeight="30.0" prefWidth="58.0" text="Buscar">
+               <VBox.margin>
+                  <Insets right="22.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Pantalla">
+               <items>
+                  <RadioMenuItem fx:id="modo_noche" mnemonicParsing="false" onAction="#Modo_CSS" text="Modo noche">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="css" />
+                     </toggleGroup>
+                  </RadioMenuItem>
+                  <RadioMenuItem fx:id="modo_dia" mnemonicParsing="false" onAction="#Modo_CSS" text="Modo día" toggleGroup="$css" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxconnect4.FXMLAvatarsController">
+   <left>
+      <HBox prefHeight="195.0" prefWidth="130.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <HBox prefHeight="195.0" prefWidth="121.0" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <VBox alignment="TOP_CENTER" prefHeight="105.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Selecciona el nuevo avatar">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="22.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="114.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="aceptar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#volver" prefHeight="30.0" prefWidth="66.0" text="Aceptar">
+               <HBox.margin>
+                  <Insets bottom="18.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#cancelar" prefHeight="30.0" prefWidth="66.0" text="Cancelar">
+               <HBox.margin>
+                  <Insets bottom="18.0" left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="121.0" prefWidth="333.0">
+               <children>
+                  <Button fx:id="boton_1" mnemonicParsing="false" onAction="#cambiar_avatar">
+                     <graphic>
+                        <ImageView fx:id="avatar_1" fitHeight="139.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../avatars/avatar1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="boton_2" mnemonicParsing="false" onAction="#cambiar_avatar">
+                     <graphic>
+                        <ImageView fx:id="avatar_2" fitHeight="139.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../avatars/avatar2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="boton_3" mnemonicParsing="false" onAction="#cambiar_avatar">
+                     <graphic>
+                        <ImageView fx:id="avatar_3" fitHeight="139.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../avatars/default.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="boton_4" mnemonicParsing="false" onAction="#cambiar_avatar">
+                     <graphic>
+                        <ImageView fx:id="avatar_4" fitHeight="139.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../avatars/avatar4.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="boton_5" mnemonicParsing="false" onAction="#cambiar_avatar">
+                     <graphic>
+                        <ImageView fx:id="avatar_5" fitHeight="139.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../avatars/avatar3.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
